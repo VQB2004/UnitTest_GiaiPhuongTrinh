@@ -42,23 +42,24 @@ namespace GiaiPhuongTrinh_AnBao
             }  
             else
             {
-                
+                Bac2_class_AnBao d_AnBao = new Bac2_class_AnBao(a, b, c);
+
                 int delta = b * b - 4 * a * c;
 
                 if (delta > 0)
                 {
-                    double x1 = (-b + Math.Sqrt(delta)) / (2 * a);
-                    double x2 = (-b - Math.Sqrt(delta)) / (2 * a);
+                    double x1 = d_AnBao.Giai_bac2_AnBao().Item1;
+                    double x2 = d_AnBao.Giai_bac2_AnBao().Item2;
                     txt_ketqua_bac2_AnBao.Text = "x1: " + x1 + ", x2: " + x2;
                 }
                 else if (delta == 0)
                 {
-                    double x = -b / (2 * a);
+                    double x = d_AnBao.Giai_bac2_AnBao().Item1;
                     txt_ketqua_bac2_AnBao.Text = "Nghiệm kép: " + x;
                 }
                 else
                 {
-                    txt_ketqua_bac2_AnBao.Text = "Phương trình vô nghiệm";
+                    txt_ketqua_bac2_AnBao.Text = "Phương trình vô nghiệm!";
                 }
             }    
         }

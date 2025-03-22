@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace GiaiPhuongTrinh_AnBao
 {
     // public class
-    class Bac2_class_AnBao
+    public class Bac2_class_AnBao
     {
         private int a, b, c;
         public Bac2_class_AnBao(int a, int b, int c)
@@ -28,14 +28,16 @@ namespace GiaiPhuongTrinh_AnBao
             {
                 x1 = (-b + Math.Sqrt(delta)) / (2 * a);
                 x2 = (-b - Math.Sqrt(delta)) / (2 * a);
+                kq = "Two distinct roots";
             }
             else if (delta == 0)
             {
                 x1=x2 = -b / (2 * a);
+                kq = "repeated root";
             }
             else
             {
-                kq = "Vô nghiệm";
+                kq = "no real root";
             }
             return (x1, x2,kq);
         }

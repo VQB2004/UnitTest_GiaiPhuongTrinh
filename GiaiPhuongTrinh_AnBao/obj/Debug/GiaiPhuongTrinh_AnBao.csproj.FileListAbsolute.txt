@@ -18,3 +18,14 @@ D:\UnitTest_GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\obj\Debug\GiaiPhuongTrin
 D:\UnitTest_GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\obj\Debug\GiaiPhuongTrinh_AnBao.csproj.CoreCompileInputs.cache
 D:\UnitTest_GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\obj\Debug\GiaiPhuongTrinh_AnBao.exe
 D:\UnitTest_GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\obj\Debug\GiaiPhuongTrinh_AnBao.pdb
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\bin\Debug\GiaiPhuongTrinh_AnBao.exe.config
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\bin\Debug\GiaiPhuongTrinh_AnBao.exe
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\bin\Debug\GiaiPhuongTrinh_AnBao.pdb
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\obj\Debug\GiaiPhuongTrinh_AnBao.csproj.AssemblyReference.cache
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\obj\Debug\GiaiPhuongTrinh_AnBao.csproj.SuggestedBindingRedirects.cache
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\obj\Debug\GiaiPhuongTrinh_AnBao.Form1.resources
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\obj\Debug\GiaiPhuongTrinh_AnBao.Properties.Resources.resources
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\obj\Debug\GiaiPhuongTrinh_AnBao.csproj.GenerateResource.cache
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\obj\Debug\GiaiPhuongTrinh_AnBao.csproj.CoreCompileInputs.cache
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\obj\Debug\GiaiPhuongTrinh_AnBao.exe
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\obj\Debug\GiaiPhuongTrinh_AnBao.pdb

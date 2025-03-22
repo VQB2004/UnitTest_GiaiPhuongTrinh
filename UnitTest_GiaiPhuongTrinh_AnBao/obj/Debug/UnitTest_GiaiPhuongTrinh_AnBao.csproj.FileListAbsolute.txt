@@ -27,3 +27,33 @@ D:\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Excel
 D:\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\ExcelDataReader.xml
 D:\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\ExcelDataReader.DataSet.pdb
 D:\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\ExcelDataReader.DataSet.xml
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Data\Bac1.csv
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\UnitTest_GiaiPhuongTrinh_AnBao.dll.config
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\UnitTest_GiaiPhuongTrinh_AnBao.dll
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\UnitTest_GiaiPhuongTrinh_AnBao.pdb
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\EntityFramework.dll
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\ExcelDataReader.DataSet.dll
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\ExcelDataReader.dll
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\GiaiPhuongTrinh_AnBao.exe
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\GiaiPhuongTrinh_AnBao.pdb
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\GiaiPhuongTrinh_AnBao.exe.config
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\EntityFramework.xml
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\ExcelDataReader.pdb
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\ExcelDataReader.xml
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\ExcelDataReader.DataSet.pdb
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\ExcelDataReader.DataSet.xml
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\obj\Debug\UnitTest_GiaiPhuongTrinh_AnBao.csproj.AssemblyReference.cache
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\obj\Debug\UnitTest_GiaiPhuongTrinh_AnBao.csproj.ResolveComReference.cache
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\obj\Debug\UnitTest_GiaiPhuongTrinh_AnBao.csproj.CoreCompileInputs.cache
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\obj\Debug\UnitTest_GiaiPhuongTrinh_AnBao.csproj.CopyComplete
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\obj\Debug\UnitTest_GiaiPhuongTrinh_AnBao.dll
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\obj\Debug\UnitTest_GiaiPhuongTrinh_AnBao.pdb
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Data\TestData_Bac2_AnBao.csv
