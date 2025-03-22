@@ -8,3 +8,13 @@ D:\GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\obj\Debug\GiaiPhuongTrinh_AnBao.c
 D:\GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\obj\Debug\GiaiPhuongTrinh_AnBao.exe
 D:\GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\obj\Debug\GiaiPhuongTrinh_AnBao.pdb
 D:\GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\obj\Debug\GiaiPhuongTrinh_AnBao.Form1.resources
+D:\UnitTest_GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\bin\Debug\GiaiPhuongTrinh_AnBao.exe.config
+D:\UnitTest_GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\bin\Debug\GiaiPhuongTrinh_AnBao.exe
+D:\UnitTest_GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\bin\Debug\GiaiPhuongTrinh_AnBao.pdb
+D:\UnitTest_GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\obj\Debug\GiaiPhuongTrinh_AnBao.csproj.AssemblyReference.cache
+D:\UnitTest_GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\obj\Debug\GiaiPhuongTrinh_AnBao.Form1.resources
+D:\UnitTest_GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\obj\Debug\GiaiPhuongTrinh_AnBao.Properties.Resources.resources
+D:\UnitTest_GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\obj\Debug\GiaiPhuongTrinh_AnBao.csproj.GenerateResource.cache
+D:\UnitTest_GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\obj\Debug\GiaiPhuongTrinh_AnBao.csproj.CoreCompileInputs.cache
+D:\UnitTest_GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\obj\Debug\GiaiPhuongTrinh_AnBao.exe
+D:\UnitTest_GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\obj\Debug\GiaiPhuongTrinh_AnBao.pdb

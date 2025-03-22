@@ -21,23 +21,13 @@ namespace GiaiPhuongTrinh_AnBao
         {
             int a = int.Parse(txt_a_bac1_AnBao.Text);
             int b = int.Parse(txt_b_bac1_AnBao.Text);
-     
-            if(a==0)
-            {
-                if(b==0)
-                {
-                    txt_ketqua_bac1_AnBao.Text = "Vô số nghiệm";
-                }   
-                else
-                {
-                    txt_ketqua_bac1_AnBao.Text = "Vô nghiệm";
-                }    
-            }
+            Bac1_class_AnBao c = new Bac1_class_AnBao(a, b);
+            if (c.Giai_bac1_AnBao().Item2 == "")
+                txt_ketqua_bac1_AnBao.Text = c.Giai_bac1_AnBao().Item1.ToString();
             else
-            {
-                double x = -(double)b /(double)a;
-                txt_ketqua_bac1_AnBao.Text = Math.Round(x, 2).ToString();
-            }
+                txt_ketqua_bac1_AnBao.Text = c.Giai_bac1_AnBao().Item2.ToString();
+
+
         }
 
         private void btn_giai_bac2_AnBao_Click(object sender, EventArgs e)
