@@ -48,17 +48,19 @@ namespace GiaiPhuongTrinh_AnBao
 
                 if (delta > 0)
                 {
-                    double x1 = d_AnBao.Giai_bac2_AnBao().Item1;
-                    double x2 = d_AnBao.Giai_bac2_AnBao().Item2;
-                    txt_ketqua_bac2_AnBao.Text = "x1: " + x1 + ", x2: " + x2;
+                    double x1 = Math.Round(d_AnBao.Giai_bac2_AnBao().Item1,2);
+                    double x2 = Math.Round(d_AnBao.Giai_bac2_AnBao().Item2,2);
+                   
+                    txt_ketqua_bac2_AnBao.Text = "x1: " + x1 + "; x2: " + x2 ;
                 }
                 else if (delta == 0)
                 {
-                    double x = d_AnBao.Giai_bac2_AnBao().Item1;
+                    double x = Math.Round(d_AnBao.Giai_bac2_AnBao().Item1);
                     txt_ketqua_bac2_AnBao.Text = "Nghiệm kép: " + x;
                 }
                 else
                 {
+                    
                     txt_ketqua_bac2_AnBao.Text = "Phương trình vô nghiệm!";
                 }
             }    

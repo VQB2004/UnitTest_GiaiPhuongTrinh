@@ -57,3 +57,5 @@ G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\obj
 G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\obj\Debug\UnitTest_GiaiPhuongTrinh_AnBao.dll
 G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\obj\Debug\UnitTest_GiaiPhuongTrinh_AnBao.pdb
 G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Data\TestData_Bac2_AnBao.csv
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Data\TestData_Bac2_5col_AnBao.csv
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Data\testdata.csv
