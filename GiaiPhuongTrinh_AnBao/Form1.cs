@@ -36,34 +36,9 @@ namespace GiaiPhuongTrinh_AnBao
             int b = int.Parse(txt_b_bac2_AnBao.Text);
             int c = int.Parse(txt_c_bac2_AnBao.Text);
 
-            if(a==0)
-            {
-                txt_ketqua_bac2_AnBao.Text = "Không là phương trình bậc 2";
-            }  
-            else
-            {
-                Bac2_class_AnBao d_AnBao = new Bac2_class_AnBao(a, b, c);
-
-                int delta = b * b - 4 * a * c;
-
-                if (delta > 0)
-                {
-                    double x1 = Math.Round(d_AnBao.Giai_bac2_AnBao().Item1,2);
-                    double x2 = Math.Round(d_AnBao.Giai_bac2_AnBao().Item2,2);
-                   
-                    txt_ketqua_bac2_AnBao.Text = "x1: " + x1 + "; x2: " + x2 ;
-                }
-                else if (delta == 0)
-                {
-                    double x = Math.Round(d_AnBao.Giai_bac2_AnBao().Item1);
-                    txt_ketqua_bac2_AnBao.Text = "Nghiệm kép: " + x;
-                }
-                else
-                {
-                    
-                    txt_ketqua_bac2_AnBao.Text = "Phương trình vô nghiệm!";
-                }
-            }    
+            Bac2_class_AnBao x = new Bac2_class_AnBao(a, b, c);
+            txt_ketqua_bac2_AnBao.Text = x.Giai_bac2_AnBao().Item3;
         }
+
     }
 }

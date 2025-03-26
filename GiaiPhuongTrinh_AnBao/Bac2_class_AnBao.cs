@@ -23,22 +23,29 @@ namespace GiaiPhuongTrinh_AnBao
             double x2 = 0;
             string kq = "";
             int delta = b * b - 4 * a * c;
-
-            if (delta > 0)
-            {
-                x1 = (-b + Math.Sqrt(delta)) / (2 * a);
-                x2 = (-b - Math.Sqrt(delta)) / (2 * a);
-                kq = "Two distinct roots";
-            }
-            else if (delta == 0)
-            {
-                x1=x2 = -b / (2 * a);
-                kq = "repeated root";
-            }
-            else
+            if(a==0)
             {
                 kq = "no real root";
             }
+            else
+            {
+                if (delta > 0)
+                {
+                    x1 = (-b + Math.Sqrt(delta)) / (2 * a);
+                    x2 = (-b - Math.Sqrt(delta)) / (2 * a);
+                    kq = "Two distinct roots";
+                }
+                else if (delta == 0)
+                {
+                    x1 = x2 = -b / (2 * a);
+                    kq = "repeated root";
+                }
+                else
+                {
+                    kq = "no real root";
+                }
+            }
+            
             return (x1, x2,kq);
         }
     }

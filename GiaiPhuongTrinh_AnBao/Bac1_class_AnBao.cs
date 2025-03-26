@@ -23,14 +23,7 @@ namespace GiaiPhuongTrinh_AnBao
 
             if (a == 0)
             {
-                if (b == 0)
-                {
-                    kq = "Inf.many sol"; // vô số nghiệm
-                }
-                else
-                {
                     kq = "No sol"; // vô nghiệm
-                }
             }
             else
             {

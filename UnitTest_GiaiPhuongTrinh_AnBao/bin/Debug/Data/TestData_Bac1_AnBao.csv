@@ -1,5 +1,5 @@
 ﻿a,b,expected
-0,0,Inf.many sol
+0,0,No sol
 1,2,-2
 3,4,-1.3
 0,1,No sol
