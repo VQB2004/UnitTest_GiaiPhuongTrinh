@@ -30,7 +30,6 @@ G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin
 G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
 G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
 G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
-G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Data\Bac1.csv
 G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\UnitTest_GiaiPhuongTrinh_AnBao.dll.config
 G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\UnitTest_GiaiPhuongTrinh_AnBao.dll
 G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\UnitTest_GiaiPhuongTrinh_AnBao.pdb
@@ -57,7 +56,6 @@ G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\obj
 G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\obj\Debug\UnitTest_GiaiPhuongTrinh_AnBao.pdb
 G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Data\TestData_Bac2_AnBao.csv
 G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Data\TestData_Bac2_5col_AnBao.csv
-G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Data\testdata.csv
 D:\FIX\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 D:\FIX\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
 D:\FIX\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
@@ -92,3 +90,4 @@ D:\FIX\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\D
 D:\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Data\TestData_Bac1_AnBao.csv
 D:\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Data\TestData_Bac2_5col_AnBao.csv
 D:\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Data\TestData_Bac2_AnBao.csv
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Data\TestData_Bac1_AnBao.csv

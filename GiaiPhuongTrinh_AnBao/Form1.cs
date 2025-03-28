@@ -35,9 +35,20 @@ namespace GiaiPhuongTrinh_AnBao
             int a = int.Parse(txt_a_bac2_AnBao.Text);
             int b = int.Parse(txt_b_bac2_AnBao.Text);
             int c = int.Parse(txt_c_bac2_AnBao.Text);
-
+            int delta = b * b - 4 * a * c;
             Bac2_class_AnBao x = new Bac2_class_AnBao(a, b, c);
-            txt_ketqua_bac2_AnBao.Text = x.Giai_bac2_AnBao().Item3;
+            if(delta>0)
+            {
+                txt_ketqua_bac2_AnBao.Text = "x1 = " + Math.Round(x.Giai_bac2_AnBao().Item1, 2) + " và x2 = " + Math.Round(x.Giai_bac2_AnBao().Item2, 2);
+            }
+            else if (delta == 0)
+            {
+                txt_ketqua_bac2_AnBao.Text = "x = "+ Math.Round(x.Giai_bac2_AnBao().Item1, 2);
+            }
+            else
+            {
+                txt_ketqua_bac2_AnBao.Text = x.Giai_bac2_AnBao().Item3;
+            }
         }
 
     }
