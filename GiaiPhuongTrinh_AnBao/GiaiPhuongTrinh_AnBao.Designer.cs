@@ -1,6 +1,6 @@
 ﻿namespace GiaiPhuongTrinh_AnBao
 {
-    partial class Form1
+    partial class GiaiPhuongTrinh_AnBao
     {
         /// <summary>
         /// Required designer variable.

@@ -23,7 +23,6 @@ G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\bin\Debug\Gi
 G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\bin\Debug\GiaiPhuongTrinh_AnBao.pdb
 G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\obj\Debug\GiaiPhuongTrinh_AnBao.csproj.AssemblyReference.cache
 G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\obj\Debug\GiaiPhuongTrinh_AnBao.csproj.SuggestedBindingRedirects.cache
-G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\obj\Debug\GiaiPhuongTrinh_AnBao.Form1.resources
 G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\obj\Debug\GiaiPhuongTrinh_AnBao.Properties.Resources.resources
 G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\obj\Debug\GiaiPhuongTrinh_AnBao.csproj.GenerateResource.cache
 G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\obj\Debug\GiaiPhuongTrinh_AnBao.csproj.CoreCompileInputs.cache
@@ -39,3 +38,4 @@ D:\FIX\UnitTest_GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\obj\Debug\GiaiPhuong
 D:\FIX\UnitTest_GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\obj\Debug\GiaiPhuongTrinh_AnBao.csproj.CoreCompileInputs.cache
 D:\FIX\UnitTest_GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\obj\Debug\GiaiPhuongTrinh_AnBao.exe
 D:\FIX\UnitTest_GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\obj\Debug\GiaiPhuongTrinh_AnBao.pdb
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\GiaiPhuongTrinh_AnBao\obj\Debug\GiaiPhuongTrinh_AnBao.GiaiPhuongTrinh_AnBao.resources

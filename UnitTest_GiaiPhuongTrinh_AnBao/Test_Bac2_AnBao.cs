@@ -76,10 +76,10 @@ namespace UnitTest_GiaiPhuongTrinh_AnBao
         //Các test case có dữ liệu đầu vào lấy từ file
 
         // Liên kết TestData với project
-        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", @".\Data\TestData_Bac2_5col_AnBao.csv", "TestData_Bac2_5col_AnBao#csv",
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", @".\Data_AnBao\TestData_Bac2_5col_AnBao.csv", "TestData_Bac2_5col_AnBao#csv",
             DataAccessMethod.Sequential)]
         //Test case với dữ liệu test 5 cột trong file csv 
-        //6 dữ liệu đầu vào, KQ: 5 pass, 1 fail
+        //5 dữ liệu đầu vào, KQ: 4 pass, 1 fail
         [TestMethod]
         public void TC5_Bac2_csv5col_AnBao()     
         {
@@ -145,6 +145,7 @@ namespace UnitTest_GiaiPhuongTrinh_AnBao
 
         [TestMethod]
         //Test case với dữ liệu test 5 cột trong file excel
+        //5 dữ liệu đầu vào, KQ: 5 pass
         public void TC6_Bac2_excel5col_AnBao()  
         {
             // clone repo về nhớ chỉnh đường dẫn đến file

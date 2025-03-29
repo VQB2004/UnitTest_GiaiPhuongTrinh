@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GiaiPhuongTrinh_AnBao
 {
-    public partial class Form1: Form
+    public partial class GiaiPhuongTrinh_AnBao: Form
     {
-        public Form1()
+        public GiaiPhuongTrinh_AnBao()
         {
             InitializeComponent();
         }

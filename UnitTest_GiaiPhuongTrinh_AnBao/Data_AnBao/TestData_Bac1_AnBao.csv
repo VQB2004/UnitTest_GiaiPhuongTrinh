@@ -1,5 +1,6 @@
 ﻿a_AnBao,b_AnBao,expected_AnBao
 0,0,No sol
 1,2,-2
-3,4,-1.3
+2,-6,3
 0,1,No sol
+3,4,No sol

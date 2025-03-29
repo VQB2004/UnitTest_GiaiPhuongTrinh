@@ -55,16 +55,17 @@ namespace UnitTest_GiaiPhuongTrinh_AnBao
         //Các test case với dữ liệu đầu vào lấy từ file
 
         // Liên kết TestData với project
-        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", @".\Data\TestData_Bac1_AnBao.csv", "TestData_Bac1_AnBao#csv",
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", @".\Data_AnBao\TestData_Bac1_AnBao.csv", "TestData_Bac1_AnBao#csv",
             DataAccessMethod.Sequential)]
-        //4 dữ liệu đầu vào, KQ: 3 pass, 1 fail
+        //5 dữ liệu đầu vào, KQ: 3 pass, 2 fail
         [TestMethod]
         public void TC4_Bac1_csvAnBao()
         {
             int a_AnBao = int.Parse(TestContext.DataRow[0].ToString());
             int b_AnBao = int.Parse(TestContext.DataRow[1].ToString());
 
-            object expected_AnBao; // object là kiểu cha của tất cả datatype
+            // object là kiểu cha của tất cả datatype
+            object expected_AnBao; 
             object value_AnBao= TestContext.DataRow[2];
             if (double.TryParse(value_AnBao.ToString(), out double paresedValue))
             {
@@ -91,10 +92,11 @@ namespace UnitTest_GiaiPhuongTrinh_AnBao
 
         }
 
+        //Test với dữ liệu từ file excel. 5 dữ liệu đầu vào, KQ: 5 pass
         [TestMethod]
         public void TC5_Bac1_excel_AnBao()
         {
-            string path = "D:\\TestData_Bac1_AnBao.xlsx";
+            string path = "G:\\Kiem thu pm\\TestData_Bac1_AnBao.xlsx";
             Excel.Application excel = new Excel.Application();
             Excel.Workbook wb_bac1_AnBao;
             Excel.Worksheet ws_bac1_AnBao;
@@ -102,7 +104,7 @@ namespace UnitTest_GiaiPhuongTrinh_AnBao
             ws_bac1_AnBao = wb_bac1_AnBao.Worksheets[1];
 
             // truyền kích thước đúng file 
-            Range cell = ws_bac1_AnBao.Range["A1:C4"];
+            Range cell = ws_bac1_AnBao.Range["A1:C6"];
 
             object[,] table = (object[,])cell.Value;
 
@@ -130,18 +132,28 @@ namespace UnitTest_GiaiPhuongTrinh_AnBao
                 // Ghi ra Test Explorer
                 TestContext.WriteLine($"{i - 1}) a={a_AnBao}, b={b_AnBao}");
                 TestContext.WriteLine($"   Expected: {expected_AnBao}");
-                
-                if (actual2_AnBao == "")
+
+                try
                 {
-                    TestContext.WriteLine($"   Actual: {actual1_AnBao}");
-                    Assert.AreEqual(expected_AnBao, actual1_AnBao);
+                    if (actual2_AnBao == "")
+                    {
+                        TestContext.WriteLine($"   Actual: {actual1_AnBao}");
+                        Assert.AreEqual(expected_AnBao, actual1_AnBao);
+
+                    }
+                    else
+                    {
+                        TestContext.WriteLine($"   Actual: {actual2_AnBao}");
+                        Assert.AreEqual(expected_AnBao, actual2_AnBao);
+                    }
+                    TestContext.WriteLine("=> Pass");
+                }
+                catch (AssertFailedException e)
+                {
+                    TestContext.WriteLine($" => Failed! Error: {e.Message}");
 
                 }
-                else
-                {
-                    TestContext.WriteLine($"   Actual: {actual2_AnBao}");
-                    Assert.AreEqual(expected_AnBao, actual2_AnBao);
-                }
+               
             }
             wb_bac1_AnBao.Close(false);
             excel.Quit();

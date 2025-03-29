@@ -73,13 +73,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Data\TestData_Bac1_AnBao.csv">
+    <None Include="Data_AnBao\TestData_Bac1_AnBao.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Data\TestData_Bac2_5col_AnBao.csv">
+    <None Include="Data_AnBao\TestData_Bac2_5col_AnBao.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Data\TestData_Bac2_AnBao.csv">
+    <None Include="Data_AnBao\TestData_Bac2_AnBao.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />

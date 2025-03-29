@@ -54,8 +54,6 @@ G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\obj
 G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\obj\Debug\UnitTest_GiaiPhuongTrinh_AnBao.csproj.CopyComplete
 G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\obj\Debug\UnitTest_GiaiPhuongTrinh_AnBao.dll
 G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\obj\Debug\UnitTest_GiaiPhuongTrinh_AnBao.pdb
-G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Data\TestData_Bac2_AnBao.csv
-G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Data\TestData_Bac2_5col_AnBao.csv
 D:\FIX\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 D:\FIX\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
 D:\FIX\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
@@ -90,4 +88,6 @@ D:\FIX\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\D
 D:\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Data\TestData_Bac1_AnBao.csv
 D:\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Data\TestData_Bac2_5col_AnBao.csv
 D:\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Data\TestData_Bac2_AnBao.csv
-G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Data\TestData_Bac1_AnBao.csv
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Data_AnBao\TestData_Bac1_AnBao.csv
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Data_AnBao\TestData_Bac2_5col_AnBao.csv
+G:\Kiem thu pm\UnitTest_GiaiPhuongTrinh_AnBao\UnitTest_GiaiPhuongTrinh_AnBao\bin\Debug\Data_AnBao\TestData_Bac2_AnBao.csv
