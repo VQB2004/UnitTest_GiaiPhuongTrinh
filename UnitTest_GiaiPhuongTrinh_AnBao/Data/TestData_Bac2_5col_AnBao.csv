@@ -1,4 +1,7 @@
 ﻿a_AnBao,b_AnBao,c_AnBao,x1_expected_AnBao,x2_expected_AnBao
 1,1,0,0,-1
-1,-4,4,repeated root,repeated root
+1,-4,4,2,2
+1,-5,6,10,20
 1,1,1,no real root,no real root
+1,2,5,no real root,no real root
+5,-2,3,no real root,no real root

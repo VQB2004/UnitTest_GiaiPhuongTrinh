@@ -37,7 +37,8 @@ namespace GiaiPhuongTrinh_AnBao
                 }
                 else if (delta == 0)
                 {
-                    x1 = x2 = -b / (2 * a);
+                    x1 = -b / (2 * a);
+                    x2 = -b / (2 * a);
                     kq = "repeated root";
                 }
                 else

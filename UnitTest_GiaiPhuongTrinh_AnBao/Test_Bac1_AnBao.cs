@@ -14,12 +14,52 @@ namespace UnitTest_GiaiPhuongTrinh_AnBao
     {
         public TestContext TestContext { get; set; }
 
+        //Các test case có dữ liệu từ code
+        //TC1: a_AnBao = 1, b_AnBao = -2, x_e_AnBao = 2, kq: pass
+        [TestMethod]
+        public void TC1_Bac1_1Nghiem_AnBao()
+        {
+            int a_AnBao = 1;
+            int b_AnBao = -2;
+            double x_e_AnBao = 2;
+            Bac1_class_AnBao c_AnBao = new Bac1_class_AnBao(a_AnBao, b_AnBao);
+            Assert.AreEqual(x_e_AnBao, c_AnBao.Giai_bac1_AnBao().Item1);
+          
+        }
+
+        //TC2: a_AnBao = 0, b_AnBao = -2, kq_e_AnBao = "No sol", kq: pass
+        [TestMethod]
+        public void TC2_Bac1_VoNghiem_AnBao()
+        {
+            int a_AnBao = 0;
+            int b_AnBao = -2;
+            string kq_e_AnBao = "No sol";
+            Bac1_class_AnBao c_AnBao = new Bac1_class_AnBao(a_AnBao, b_AnBao);
+            Assert.AreEqual(kq_e_AnBao, c_AnBao.Giai_bac1_AnBao().Item2);
+
+        }
+
+        //TC3: a_AnBao = 0, b_AnBao = -2, x_e_AnBao = 2, kq: fail
+        [TestMethod]
+        public void TC3_Bac1_1Nghiem_AnBao()
+        {
+            int a_AnBao = 0;
+            int b_AnBao = -2;
+            double x_e_AnBao = 2;
+            Bac1_class_AnBao c_AnBao = new Bac1_class_AnBao(a_AnBao, b_AnBao);
+            Assert.AreEqual(x_e_AnBao, c_AnBao.Giai_bac1_AnBao().Item1);
+
+        }
+
+
+        //Các test case với dữ liệu đầu vào lấy từ file
 
         // Liên kết TestData với project
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", @".\Data\TestData_Bac1_AnBao.csv", "TestData_Bac1_AnBao#csv",
             DataAccessMethod.Sequential)]
+        //4 dữ liệu đầu vào, KQ: 3 pass, 1 fail
         [TestMethod]
-        public void TC1_Bac1_csvAnBao()
+        public void TC4_Bac1_csvAnBao()
         {
             int a_AnBao = int.Parse(TestContext.DataRow[0].ToString());
             int b_AnBao = int.Parse(TestContext.DataRow[1].ToString());
@@ -34,8 +74,6 @@ namespace UnitTest_GiaiPhuongTrinh_AnBao
             {
                 expected_AnBao = value_AnBao.ToString();
             }
-
-
 
             Bac1_class_AnBao c_AnBao = new Bac1_class_AnBao(a_AnBao, b_AnBao);
 
@@ -54,7 +92,7 @@ namespace UnitTest_GiaiPhuongTrinh_AnBao
         }
 
         [TestMethod]
-        public void TC2_Bac1_excel_AnBao()
+        public void TC5_Bac1_excel_AnBao()
         {
             string path = "D:\\TestData_Bac1_AnBao.xlsx";
             Excel.Application excel = new Excel.Application();

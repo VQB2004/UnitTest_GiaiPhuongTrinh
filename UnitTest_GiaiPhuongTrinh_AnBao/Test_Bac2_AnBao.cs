@@ -14,93 +14,72 @@ namespace UnitTest_GiaiPhuongTrinh_AnBao
 	public class Test_Bac2_AnBao
 	{
         public TestContext TestContext { get; set; }
+        //Các test case với dữ liệu có sẵn trong code:
 
-        // Liên kết TestData với project
-        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", @".\Data\TestData_Bac2_AnBao.csv", "TestData_Bac2_AnBao#csv",
-            DataAccessMethod.Sequential)]
-        //Test case với dữ liệu test 4 cột trong file csv
+        //TC1: a_AnBao=1, b_AnBao=1, c_AnBao=0 , x1_e_AnBao =0, x2_e_AnBao=-1, kq: pass
         [TestMethod]
-        public void TC3_Bac2_csv_AnBao() 
+        public void TC1_Bac2_HaiNghiemPB_AnBao()
         {
-            //Lấy dữ liệu từ file csv lưu vào các biến
-            int a_AnBao = int.Parse(TestContext.DataRow[0].ToString());
-            int b_AnBao = int.Parse(TestContext.DataRow[1].ToString());
-            int c_AnBao = int.Parse(TestContext.DataRow[2].ToString());
-            string kq_exp_AnBao = TestContext.DataRow[3].ToString().Trim();
+            int a_AnBao = 1;
+            int b_AnBao = 1;
+            int c_AnBao = 0;
+            double x1_e_AnBao = 0;
+            double x2_e_AnBao = -1;
 
             Bac2_class_AnBao d_AnBao = new Bac2_class_AnBao(a_AnBao, b_AnBao, c_AnBao);
-            string kq_actual_AnBao = d_AnBao.Giai_bac2_AnBao().Item3;
-            //So sánh kết quả mong đợi với kết quả thực tế
-            Assert.AreEqual(kq_exp_AnBao, kq_actual_AnBao);
-
+            Assert.AreEqual(x1_e_AnBao, d_AnBao.Giai_bac2_AnBao().Item1);
+            Assert.AreEqual(x2_e_AnBao, d_AnBao.Giai_bac2_AnBao().Item2);
         }
 
-        //Test case với dữ liệu test 4 cột trong file excel
+        //TC2: a_AnBao=1, b_AnBao=-4, c_AnBao=4 , x_e_AnBao =2, kq: pass
         [TestMethod]
-        public void TC4_Bac2_excel_AnBao()  
+        public void TC2_Bac2_NghiemKep_AnBao()
         {
-            // clone repo về nhớ chỉnh đường dẫn đến file
-            string path = "G:\\kiem thu pm\\DataTestExcel_Bac2_AnBao.xlsx";
-            //Tạo một đối tượng Excel Application.
-            Excel.Application excel = new Excel.Application();
-            Excel.Workbook wb_bac2_AnBao;
-            Excel.Worksheet ws_bac2_AnBao;
+            int a_AnBao = 1;
+            int b_AnBao = -4;
+            int c_AnBao = 4;
+            double x_e_AnBao = 2;
 
-            //Mở Workbook từ file Excel có đường dẫn trong path
-            wb_bac2_AnBao = excel.Workbooks.Open(path);
-            //Lấy Sheet đầu tiên để làm việc.
-            ws_bac2_AnBao = wb_bac2_AnBao.Worksheets[1];
+            Bac2_class_AnBao d_AnBao = new Bac2_class_AnBao(a_AnBao, b_AnBao, c_AnBao);
+            Assert.AreEqual(x_e_AnBao, d_AnBao.Giai_bac2_AnBao().Item1);
+            Assert.AreEqual(x_e_AnBao, d_AnBao.Giai_bac2_AnBao().Item2);
+        }
 
-            // Chọn vùng dữ liệu trong file excel (phải đúng kích thước truyền vào)
-            Range cell_AnBao = ws_bac2_AnBao.Range["A1:D7"];
+        //TC3: a_AnBao=1, b_AnBao=1, c_AnBao=1 , kq_e = "no real root", kq: pass
+        [TestMethod]
+        public void TC3_Bac2_VoNghiem_AnBao()
+        {
+            int a_AnBao = 1;
+            int b_AnBao = 1;
+            int c_AnBao = 1;
+            string kq_e_AnBao = "no real root";
 
-            //Lưu dữ liệu vào đối tượng mảng 2 chiều
-            object[,] table_AnBao = (object[,])cell_AnBao.Value;
+            Bac2_class_AnBao d_AnBao = new Bac2_class_AnBao(a_AnBao, b_AnBao, c_AnBao);
+            Assert.AreEqual(kq_e_AnBao, d_AnBao.Giai_bac2_AnBao().Item3);
+        }
 
-            //Lặp qua từng dòng dữ liệu để thực hiện kiểm thử
-            for (int i = 2; i <= table_AnBao.GetLength(0); i++)
-            {
-                int a_AnBao = int.Parse(table_AnBao[i, 1].ToString());
-                int b_AnBao = int.Parse(table_AnBao[i, 2].ToString());
-                int c_AnBao = int.Parse(table_AnBao[i, 3].ToString());
-                string kq_exp_AnBao = table_AnBao[i, 4].ToString();
+        //TC4: a_AnBao=1, b_AnBao=-5, c_AnBao=6 , x_e_AnBao =2, kq: fail
+        [TestMethod]
+        public void TC4_Bac2_NghiemKep_AnBao()
+        {
+            int a_AnBao = 1;
+            int b_AnBao = -5;
+            int c_AnBao = 6;
+            double x_e_AnBao = 2;
 
-                Bac2_class_AnBao d_AnBao = new Bac2_class_AnBao(a_AnBao, b_AnBao, c_AnBao);
-                string kq_actual_AnBao = d_AnBao.Giai_bac2_AnBao().Item3;
-
-                // Ghi log ra Test Explorer
-                TestContext.WriteLine($"{i - 1}) a={a_AnBao}, b={b_AnBao}, c={c_AnBao}");
-                TestContext.WriteLine($"   Expected: {kq_exp_AnBao}");
-                TestContext.WriteLine($"   Actual: {kq_actual_AnBao}");
-                try
-                {
-                    //So sánh kết quả mong đợi với kết quả thực sự
-                    Assert.AreEqual(kq_exp_AnBao, kq_actual_AnBao);
-                    TestContext.WriteLine(" => Passed!");
-                }
-                catch (AssertFailedException e)
-                {
-                    TestContext.WriteLine($" => Failed! Error: {e.Message}");
-
-                }
-
-            }
-            //Đóng file excel
-            wb_bac2_AnBao.Close(false);
-            excel.Quit();
-
-            ws_bac2_AnBao = null;
-            wb_bac2_AnBao = null;
-            excel = null;
-
+            Bac2_class_AnBao d_AnBao = new Bac2_class_AnBao(a_AnBao, b_AnBao, c_AnBao);
+            Assert.AreEqual(x_e_AnBao, d_AnBao.Giai_bac2_AnBao().Item1);
+            Assert.AreEqual(x_e_AnBao, d_AnBao.Giai_bac2_AnBao().Item2);
         }
 
 
+        //Các test case có dữ liệu đầu vào lấy từ file
 
         // Liên kết TestData với project
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", @".\Data\TestData_Bac2_5col_AnBao.csv", "TestData_Bac2_5col_AnBao#csv",
             DataAccessMethod.Sequential)]
         //Test case với dữ liệu test 5 cột trong file csv 
+        //6 dữ liệu đầu vào, KQ: 5 pass, 1 fail
         [TestMethod]
         public void TC5_Bac2_csv5col_AnBao()     
         {
@@ -108,10 +87,11 @@ namespace UnitTest_GiaiPhuongTrinh_AnBao
             int a_AnBao = int.Parse(TestContext.DataRow[0].ToString());
             int b_AnBao = int.Parse(TestContext.DataRow[1].ToString());
             int c_AnBao = int.Parse(TestContext.DataRow[2].ToString());
-
+            
             // object là kiểu cha của tất cả datatype
             object x1_expected_AnBao;
             object value_1_AnBao = TestContext.DataRow[3];
+            
 
             //Kiểm tra xem giá trị được lấy có chuyển về kiểu double được hay không
             // nếu được thì nhận giá trị double không thì lấy giá trị chuỗi
@@ -121,7 +101,7 @@ namespace UnitTest_GiaiPhuongTrinh_AnBao
             }
             else
             {
-                x1_expected_AnBao = value_1_AnBao.ToString();
+                x1_expected_AnBao = "no real root";
 
             }
 
@@ -137,7 +117,7 @@ namespace UnitTest_GiaiPhuongTrinh_AnBao
             }
             else
             {
-                x2_expected_AnBao = value_2_AnBao.ToString();
+                x2_expected_AnBao = "no real root";
             }
 
             //Tạo 1 đối tượng Bac2_class_AnBao
@@ -159,7 +139,7 @@ namespace UnitTest_GiaiPhuongTrinh_AnBao
             else
             {
                 //So sánh kết quả mong đợi với kết quả thực tế
-                Assert.AreEqual(x1_expected_AnBao.ToString(), kq_AnBao.ToString());
+                Assert.AreEqual(x1_expected_AnBao.ToString(), kq_AnBao);
             }
         }
 
