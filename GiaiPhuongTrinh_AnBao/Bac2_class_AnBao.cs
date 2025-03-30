@@ -9,45 +9,45 @@ namespace GiaiPhuongTrinh_AnBao
     // public class
     public class Bac2_class_AnBao
     {
-        private int a, b, c;
-        public Bac2_class_AnBao(int a, int b, int c)
+        private int a_AnBao, b_AnBao, c_AnBao;
+        public Bac2_class_AnBao(int a_AnBao, int b_AnBao, int c_AnBao)
         {
-            this.a = a;
-            this.b = b;
-            this.c = c;
+            this.a_AnBao = a_AnBao;
+            this.b_AnBao = b_AnBao;
+            this.c_AnBao = c_AnBao;
         }
         
         public (double,double,string) Giai_bac2_AnBao()
         {
-            double x1 = 0;
-            double x2 = 0;
-            string kq = "";
-            int delta = b * b - 4 * a * c;
-            if(a==0)
+            double x1_AnBao = 0;
+            double x2_AnBao = 0;
+            string kq_AnBao = "";
+            int delta_AnBao = b_AnBao * b_AnBao - 4 * a_AnBao * c_AnBao;
+            if(a_AnBao == 0)
             {
-                kq = "no real root";
+                kq_AnBao = "no real root";
             }
             else
             {
-                if (delta > 0)
+                if (delta_AnBao > 0)
                 {
-                    x1 = (-b + Math.Sqrt(delta)) / (2 * a);
-                    x2 = (-b - Math.Sqrt(delta)) / (2 * a);
-                    kq = "Two distinct roots";
+                    x1_AnBao = (-b_AnBao + Math.Sqrt(delta_AnBao)) / (2 * a_AnBao);
+                    x2_AnBao = (-b_AnBao - Math.Sqrt(delta_AnBao)) / (2 * a_AnBao);
+                    kq_AnBao = "Two distinct roots";
                 }
-                else if (delta == 0)
+                else if (delta_AnBao == 0)
                 {
-                    x1 = -b / (2 * a);
-                    x2 = -b / (2 * a);
-                    kq = "repeated root";
+                    x1_AnBao = -b_AnBao / (2 * a_AnBao);
+                    x2_AnBao = -b_AnBao / (2 * a_AnBao);
+                    kq_AnBao = "repeated root";
                 }
                 else
                 {
-                    kq = "no real root";
+                    kq_AnBao = "no real root";
                 }
             }
             
-            return (x1, x2,kq);
+            return (x1_AnBao, x2_AnBao, kq_AnBao);
         }
     }
 }

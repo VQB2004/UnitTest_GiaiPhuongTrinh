@@ -9,29 +9,29 @@ namespace GiaiPhuongTrinh_AnBao
     // nhớ để public class
    public class Bac1_class_AnBao
     {
-        private int a, b;
+        private int a_AnBao, b_AnBao;
         
-        public Bac1_class_AnBao(int a,int b)
+        public Bac1_class_AnBao(int a_AnBao, int b_AnBao)
         {
-            this.a = a;
-            this.b = b;
+            this.a_AnBao = a_AnBao;
+            this.b_AnBao = b_AnBao;
         }
         public (double,string)Giai_bac1_AnBao()
         {
-            double x = 0;
-            string kq="";
+            double x_AnBao = 0;
+            string kq_AnBao = "";
 
-            if (a == 0)
+            if (a_AnBao == 0)
             {
-                    kq = "No sol"; // vô nghiệm
+                kq_AnBao = "No sol"; // vô nghiệm
             }
             else
             {
-               x = Math.Round(-(double)b / (double)a,1);
+                x_AnBao = Math.Round(-(double)b_AnBao / (double)a_AnBao, 1);
             }
         
 
-            return (x,kq);
+            return (x_AnBao, kq_AnBao);
         }
     }
 }

@@ -67,27 +67,27 @@ namespace UnitTest_GiaiPhuongTrinh_AnBao
             // object là kiểu cha của tất cả datatype
             object expected_AnBao; 
             object value_AnBao= TestContext.DataRow[2];
-            if (double.TryParse(value_AnBao.ToString(), out double paresedValue))
+            if (double.TryParse(value_AnBao.ToString(), out double paresedValue_AnBao))
             {
-                expected_AnBao = paresedValue;
+                expected_AnBao = paresedValue_AnBao;
             }
             else
             {
-                expected_AnBao = value_AnBao.ToString();
+                expected_AnBao = "No sol";
             }
 
             Bac1_class_AnBao c_AnBao = new Bac1_class_AnBao(a_AnBao, b_AnBao);
 
-            var actual1 = c_AnBao.Giai_bac1_AnBao().Item1;
-            var actual2 = c_AnBao.Giai_bac1_AnBao().Item2;
+            var actual1_AnBao = c_AnBao.Giai_bac1_AnBao().Item1;
+            var actual2_AnBao = c_AnBao.Giai_bac1_AnBao().Item2;
 
-            if (actual2 == "")
+            if (actual2_AnBao == "")
             {
-                Assert.AreEqual(expected_AnBao, actual1);
+                Assert.AreEqual(expected_AnBao, actual1_AnBao);
             }
             else
             {
-                Assert.AreEqual(expected_AnBao, actual2);
+                Assert.AreEqual(expected_AnBao.ToString(), actual2_AnBao);
             }
 
         }
@@ -96,32 +96,32 @@ namespace UnitTest_GiaiPhuongTrinh_AnBao
         [TestMethod]
         public void TC5_Bac1_excel_AnBao()
         {
-            string path = "G:\\Kiem thu pm\\TestData_Bac1_AnBao.xlsx";
-            Excel.Application excel = new Excel.Application();
+            string path_AnBao = "G:\\Kiem thu pm\\TestData_Bac1_AnBao.xlsx";
+            Excel.Application excel_AnBao = new Excel.Application();
             Excel.Workbook wb_bac1_AnBao;
             Excel.Worksheet ws_bac1_AnBao;
-            wb_bac1_AnBao = excel.Workbooks.Open(path);
+            wb_bac1_AnBao = excel_AnBao.Workbooks.Open(path_AnBao);
             ws_bac1_AnBao = wb_bac1_AnBao.Worksheets[1];
 
             // truyền kích thước đúng file 
-            Range cell = ws_bac1_AnBao.Range["A1:C6"];
+            Range cell_AnBao = ws_bac1_AnBao.Range["A1:C6"];
 
-            object[,] table = (object[,])cell.Value;
+            object[,] table_AnBao = (object[,])cell_AnBao.Value;
 
-            for (int i = 2; i <= table.GetLength(0); i++)
+            for (int i_AnBao = 2; i_AnBao <= table_AnBao.GetLength(0); i_AnBao++)
             {
-                int a_AnBao = int.Parse(table[i, 1].ToString());
-                int b_AnBao = int.Parse(table[i, 2].ToString());
+                int a_AnBao = int.Parse(table_AnBao[i_AnBao, 1].ToString());
+                int b_AnBao = int.Parse(table_AnBao[i_AnBao, 2].ToString());
                 object expected_AnBao;
 
-                object value = table[i, 3].ToString();
-                if (double.TryParse(value.ToString(), out double paresedValue))
+                object value_AnBao = table_AnBao[i_AnBao, 3].ToString();
+                if (double.TryParse(value_AnBao.ToString(), out double paresedValue_AnBao))
                 {
-                    expected_AnBao = paresedValue;
+                    expected_AnBao = paresedValue_AnBao;
                 }
                 else
                 {
-                    expected_AnBao = value.ToString();
+                    expected_AnBao = value_AnBao.ToString();
                 }
 
                 Bac1_class_AnBao c_AnBao = new Bac1_class_AnBao(a_AnBao, b_AnBao);
@@ -130,7 +130,7 @@ namespace UnitTest_GiaiPhuongTrinh_AnBao
                 var actual2_AnBao = c_AnBao.Giai_bac1_AnBao().Item2;
 
                 // Ghi ra Test Explorer
-                TestContext.WriteLine($"{i - 1}) a={a_AnBao}, b={b_AnBao}");
+                TestContext.WriteLine($"{i_AnBao - 1}) a={a_AnBao}, b={b_AnBao}");
                 TestContext.WriteLine($"   Expected: {expected_AnBao}");
 
                 try
@@ -148,19 +148,19 @@ namespace UnitTest_GiaiPhuongTrinh_AnBao
                     }
                     TestContext.WriteLine("=> Pass");
                 }
-                catch (AssertFailedException e)
+                catch (AssertFailedException e_AnBao)
                 {
-                    TestContext.WriteLine($" => Failed! Error: {e.Message}");
+                    TestContext.WriteLine($" => Failed! Error: {e_AnBao.Message}");
 
                 }
                
             }
             wb_bac1_AnBao.Close(false);
-            excel.Quit();
+            excel_AnBao.Quit();
 
             ws_bac1_AnBao = null;
             wb_bac1_AnBao = null;
-            excel = null;
+            excel_AnBao = null;
 
 
         }

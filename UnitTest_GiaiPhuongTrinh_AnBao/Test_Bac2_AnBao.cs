@@ -95,9 +95,9 @@ namespace UnitTest_GiaiPhuongTrinh_AnBao
 
             //Kiểm tra xem giá trị được lấy có chuyển về kiểu double được hay không
             // nếu được thì nhận giá trị double không thì lấy giá trị chuỗi
-            if (double.TryParse(value_1_AnBao.ToString(), out double paresedValue))
+            if (double.TryParse(value_1_AnBao.ToString(), out double paresedValue_AnBao))
             {
-                x1_expected_AnBao = paresedValue;
+                x1_expected_AnBao = paresedValue_AnBao;
             }
             else
             {
@@ -111,9 +111,9 @@ namespace UnitTest_GiaiPhuongTrinh_AnBao
 
             //Kiểm tra xem giá trị được lấy có chuyển về kiểu double được hay không
             // nếu được thì nhận giá trị double không thì lấy giá trị chuỗi
-            if (double.TryParse(value_2_AnBao.ToString(), out double Value))
+            if (double.TryParse(value_2_AnBao.ToString(), out double Value_AnBao))
             {
-                x2_expected_AnBao = Value;
+                x2_expected_AnBao = Value_AnBao;
             }
             else
             {
@@ -149,14 +149,14 @@ namespace UnitTest_GiaiPhuongTrinh_AnBao
         public void TC6_Bac2_excel5col_AnBao()  
         {
             // clone repo về nhớ chỉnh đường dẫn đến file
-            string path = "G:\\Kiem thu pm\\DataExcel_Bac2_AnBao.xlsx";
+            string path_AnBao = "G:\\Kiem thu pm\\DataExcel_Bac2_AnBao.xlsx";
             //Tạo một đối tượng Excel Application.
-            Excel.Application excel = new Excel.Application();           
+            Excel.Application excel_AnBao = new Excel.Application();           
             Excel.Workbook wb_bac2_AnBao;
             Excel.Worksheet ws_bac2_AnBao;
 
             //Mở Workbook từ file Excel có đường dẫn trong path
-            wb_bac2_AnBao = excel.Workbooks.Open(path);
+            wb_bac2_AnBao = excel_AnBao.Workbooks.Open(path_AnBao);
             //Lấy Sheet đầu tiên để làm việc.
             ws_bac2_AnBao = wb_bac2_AnBao.Worksheets[1];
 
@@ -166,23 +166,23 @@ namespace UnitTest_GiaiPhuongTrinh_AnBao
             object[,] table_AnBao = (object[,])cell_AnBao.Value;
 
             //Lặp qua từng dòng dữ liệu để thực hiện kiểm thử
-            for (int i = 2; i <= table_AnBao.GetLength(0); i++)
+            for (int i_AnBao = 2; i_AnBao <= table_AnBao.GetLength(0); i_AnBao++)
             {
                 //Đọc dữ liệu từ các cột trong bảng table_AnBao
-                int a_AnBao = int.Parse(table_AnBao[i, 1].ToString());
-                int b_AnBao = int.Parse(table_AnBao[i, 2].ToString());
-                int c_AnBao = int.Parse(table_AnBao[i, 3].ToString());
-                object x1_exp_AnBao = table_AnBao[i, 4];
-                object x2_exp_AnBao = table_AnBao[i, 5];
+                int a_AnBao = int.Parse(table_AnBao[i_AnBao, 1].ToString());
+                int b_AnBao = int.Parse(table_AnBao[i_AnBao, 2].ToString());
+                int c_AnBao = int.Parse(table_AnBao[i_AnBao, 3].ToString());
+                object x1_exp_AnBao = table_AnBao[i_AnBao, 4];
+                object x2_exp_AnBao = table_AnBao[i_AnBao, 5];
 
                 //Kiểm tra xem giá trị được lấy có chuyển về kiểu double được hay không
-                if (double.TryParse(x1_exp_AnBao.ToString(), out double paresedValue))
+                if (double.TryParse(x1_exp_AnBao.ToString(), out double paresedValue_AnBao))
                 {
-                    x1_exp_AnBao = paresedValue;
+                    x1_exp_AnBao = paresedValue_AnBao;
                 }
-                if (double.TryParse(x2_exp_AnBao.ToString(), out double Value))
+                if (double.TryParse(x2_exp_AnBao.ToString(), out double Value_AnBao))
                 {
-                    x2_exp_AnBao = Value;
+                    x2_exp_AnBao = Value_AnBao;
                 }
                 Bac2_class_AnBao d_AnBao = new Bac2_class_AnBao(a_AnBao, b_AnBao, c_AnBao);
                 double x1_actual_AnBao = d_AnBao.Giai_bac2_AnBao().Item1;
@@ -190,7 +190,7 @@ namespace UnitTest_GiaiPhuongTrinh_AnBao
                 string kq_AnBao = d_AnBao.Giai_bac2_AnBao().Item3;
 
                 // Ghi log ra Test Explorer
-                TestContext.WriteLine($"{i - 1}) a={a_AnBao}, b={b_AnBao}, c={c_AnBao}");
+                TestContext.WriteLine($"{i_AnBao - 1}) a={a_AnBao}, b={b_AnBao}, c={c_AnBao}");
 
                 //Xét điều kiện: nếu x1_exp_AnBao và x2_exp_AnBao là kiểu double
                 if (x1_exp_AnBao is double && x2_exp_AnBao is double)
@@ -206,9 +206,9 @@ namespace UnitTest_GiaiPhuongTrinh_AnBao
                         Assert.AreEqual(x2_exp_AnBao, x2_actual_AnBao);
                         TestContext.WriteLine(" => Passed!");
                     }
-                    catch (AssertFailedException e)
+                    catch (AssertFailedException e_AnBao)
                     {
-                        TestContext.WriteLine($" => Failed! Error: {e.Message}");
+                        TestContext.WriteLine($" => Failed! Error: {e_AnBao.Message}");
 
                     }
                 }
@@ -224,20 +224,20 @@ namespace UnitTest_GiaiPhuongTrinh_AnBao
                         Assert.AreEqual(x2_exp_AnBao.ToString(), kq_AnBao);
                         TestContext.WriteLine(" => Passed!");
                     }
-                    catch (AssertFailedException e)
+                    catch (AssertFailedException e_AnBao)
                     {
-                        TestContext.WriteLine($" => Failed! Error: {e.Message}");
+                        TestContext.WriteLine($" => Failed! Error: {e_AnBao.Message}");
 
                     }
                 }
             }
             //Đóng file excel
             wb_bac2_AnBao.Close(false);
-            excel.Quit();
+            excel_AnBao.Quit();
 
             ws_bac2_AnBao = null;
             wb_bac2_AnBao = null;
-            excel = null;
+            excel_AnBao = null;
         }
 
     }
