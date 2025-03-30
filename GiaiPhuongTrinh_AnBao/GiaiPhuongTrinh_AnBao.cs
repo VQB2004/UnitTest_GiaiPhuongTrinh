@@ -19,35 +19,39 @@ namespace GiaiPhuongTrinh_AnBao
 
         private void btn_giai_bac1_AnBao_Click(object sender, EventArgs e)
         {
-            int a = int.Parse(txt_a_bac1_AnBao.Text);
-            int b = int.Parse(txt_b_bac1_AnBao.Text);
-            Bac1_class_AnBao c = new Bac1_class_AnBao(a, b);
-            if (c.Giai_bac1_AnBao().Item2 == "")
-                txt_ketqua_bac1_AnBao.Text = c.Giai_bac1_AnBao().Item1.ToString();
+            int a_AnBao = int.Parse(txt_a_bac1_AnBao.Text);
+            int b_AnBao = int.Parse(txt_b_bac1_AnBao.Text);
+            Bac1_class_AnBao c_AnBao = new Bac1_class_AnBao(a_AnBao, b_AnBao);
+            if (c_AnBao.Giai_bac1_AnBao().Item2 == "")
+                txt_ketqua_bac1_AnBao.Text = c_AnBao.Giai_bac1_AnBao().Item1.ToString();
             else
-                txt_ketqua_bac1_AnBao.Text = c.Giai_bac1_AnBao().Item2.ToString();
+                txt_ketqua_bac1_AnBao.Text = c_AnBao.Giai_bac1_AnBao().Item2.ToString();
 
 
         }
 
         private void btn_giai_bac2_AnBao_Click(object sender, EventArgs e)
         {
-            int a = int.Parse(txt_a_bac2_AnBao.Text);
-            int b = int.Parse(txt_b_bac2_AnBao.Text);
-            int c = int.Parse(txt_c_bac2_AnBao.Text);
-            int delta = b * b - 4 * a * c;
-            Bac2_class_AnBao x = new Bac2_class_AnBao(a, b, c);
-            if(delta>0)
+            int a_AnBao = int.Parse(txt_a_bac2_AnBao.Text);
+            int b_AnBao = int.Parse(txt_b_bac2_AnBao.Text);
+            int c_AnBao = int.Parse(txt_c_bac2_AnBao.Text);
+            int delta_AnBao = b_AnBao * b_AnBao - 4 * a_AnBao * c_AnBao;
+            Bac2_class_AnBao x_AnBao = new Bac2_class_AnBao(a_AnBao, b_AnBao, c_AnBao);
+            if(a_AnBao == 0)
             {
-                txt_ketqua_bac2_AnBao.Text = "x1 = " + Math.Round(x.Giai_bac2_AnBao().Item1, 2) + " và x2 = " + Math.Round(x.Giai_bac2_AnBao().Item2, 2);
+                txt_ketqua_bac2_AnBao.Text = x_AnBao.Giai_bac2_AnBao().Item3;
+            }    
+            else if(delta_AnBao > 0)
+            {
+                txt_ketqua_bac2_AnBao.Text = "x1 = " + Math.Round(x_AnBao.Giai_bac2_AnBao().Item1, 2) + " và x2 = " + Math.Round(x_AnBao.Giai_bac2_AnBao().Item2, 2);
             }
-            else if (delta == 0)
+            else if (delta_AnBao == 0)
             {
-                txt_ketqua_bac2_AnBao.Text = "x = "+ Math.Round(x.Giai_bac2_AnBao().Item1, 2);
+                txt_ketqua_bac2_AnBao.Text = "x = "+ Math.Round(x_AnBao.Giai_bac2_AnBao().Item1, 2);
             }
             else
             {
-                txt_ketqua_bac2_AnBao.Text = x.Giai_bac2_AnBao().Item3;
+                txt_ketqua_bac2_AnBao.Text = x_AnBao.Giai_bac2_AnBao().Item3;
             }
         }
 
