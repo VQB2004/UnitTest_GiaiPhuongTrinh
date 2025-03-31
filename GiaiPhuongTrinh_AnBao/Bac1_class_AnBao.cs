@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GiaiPhuongTrinh_AnBao
 {
-    // nhớ để public class
+    // để public class
    public class Bac1_class_AnBao
     {
         private int a_AnBao, b_AnBao;
@@ -23,7 +23,8 @@ namespace GiaiPhuongTrinh_AnBao
 
             if (a_AnBao == 0)
             {
-                kq_AnBao = "No sol"; // vô nghiệm
+                // vô nghiệm
+                kq_AnBao = "No sol"; 
             }
             else
             {
