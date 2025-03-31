@@ -57,7 +57,7 @@ namespace UnitTest_GiaiPhuongTrinh_AnBao
         // Liên kết TestData với project
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", @".\Data_AnBao\TestData_Bac1_AnBao.csv", "TestData_Bac1_AnBao#csv",
             DataAccessMethod.Sequential)]
-        //5 dữ liệu đầu vào, KQ: 3 pass, 2 fail
+        //5 dữ liệu đầu vào, KQ: 4 pass, 1 fail
         [TestMethod]
         public void TC4_Bac1_csvAnBao()
         {
@@ -133,27 +133,39 @@ namespace UnitTest_GiaiPhuongTrinh_AnBao
                 TestContext.WriteLine($"{i_AnBao - 1}) a={a_AnBao}, b={b_AnBao}");
                 TestContext.WriteLine($"   Expected: {expected_AnBao}");
 
-                try
+                if (actual2_AnBao == "")
                 {
-                    if (actual2_AnBao == "")
+                    TestContext.WriteLine($"   Actual: {actual1_AnBao}");
+                    try
                     {
-                        TestContext.WriteLine($"   Actual: {actual1_AnBao}");
                         Assert.AreEqual(expected_AnBao, actual1_AnBao);
-
+                        TestContext.WriteLine("\tPass");
                     }
-                    else
+                    catch (Exception ex_AnBao)
                     {
-                        TestContext.WriteLine($"   Actual: {actual2_AnBao}");
-                        Assert.AreEqual(expected_AnBao, actual2_AnBao);
+                        TestContext.WriteLine("\tFail");
+                        throw (ex_AnBao);
+
                     }
-                    TestContext.WriteLine("=> Pass");
-                }
-                catch (AssertFailedException e_AnBao)
-                {
-                    TestContext.WriteLine($" => Failed! Error: {e_AnBao.Message}");
+
 
                 }
-               
+                else
+                {
+                    TestContext.WriteLine($"   Actual: {actual2_AnBao}");
+                    try
+                    {
+                        Assert.AreEqual(expected_AnBao, actual2_AnBao);
+                        TestContext.WriteLine("\tPass");
+                    }
+                    catch (Exception ex_AnBao)
+                    {
+                        TestContext.WriteLine("\tFail");
+                        throw (ex_AnBao);
+                    }
+
+                }
+
             }
             wb_bac1_AnBao.Close(false);
             excel_AnBao.Quit();

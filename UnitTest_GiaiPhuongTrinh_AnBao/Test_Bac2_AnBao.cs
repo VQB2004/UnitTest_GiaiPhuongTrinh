@@ -191,42 +191,38 @@ namespace UnitTest_GiaiPhuongTrinh_AnBao
 
                 // Ghi log ra Test Explorer
                 TestContext.WriteLine($"{i_AnBao - 1}) a={a_AnBao}, b={b_AnBao}, c={c_AnBao}");
-
-                //Xét điều kiện: nếu x1_exp_AnBao và x2_exp_AnBao là kiểu double
                 if (x1_exp_AnBao is double && x2_exp_AnBao is double)
                 {
-                    // Ghi log ra Test Explorer
                     TestContext.WriteLine($"   Expected: x1={x1_exp_AnBao}, x2={x2_exp_AnBao}");
                     TestContext.WriteLine($"   Actual: x1={x1_actual_AnBao}, x2={x2_actual_AnBao}");
 
                     try
                     {
-                        //So sánh nghiệm mong đợi với nghiệm thực tế
                         Assert.AreEqual(x1_exp_AnBao, x1_actual_AnBao);
                         Assert.AreEqual(x2_exp_AnBao, x2_actual_AnBao);
                         TestContext.WriteLine(" => Passed!");
                     }
-                    catch (AssertFailedException e_AnBao)
+                    catch (Exception ex_AnBao)
                     {
-                        TestContext.WriteLine($" => Failed! Error: {e_AnBao.Message}");
+                        TestContext.WriteLine(" ==> Failed!");
+                        throw (ex_AnBao);
 
                     }
                 }
-                //Điều kiện: nếu x1_exp_AnBao và x2_expe_AnBao không phải kiểu double
                 else
                 {
                     TestContext.WriteLine($"   Expected: {x1_exp_AnBao.ToString()}");
                     TestContext.WriteLine($"   Actual: {kq_AnBao}");
                     try
                     {
-                        //So sánh kết quả mong đợi với kết quả thực tế
                         Assert.AreEqual(x1_exp_AnBao.ToString(), kq_AnBao);
                         Assert.AreEqual(x2_exp_AnBao.ToString(), kq_AnBao);
                         TestContext.WriteLine(" => Passed!");
                     }
-                    catch (AssertFailedException e_AnBao)
+                    catch (Exception ex_AnBao)
                     {
-                        TestContext.WriteLine($" => Failed! Error: {e_AnBao.Message}");
+                        TestContext.WriteLine(" ==> Failed!");
+                        throw (ex_AnBao);
 
                     }
                 }
