@@ -1,14 +1,14 @@
-# 🔎 Unit Test - Kiểm thử bất phương trình
+# 🔎 Unit Test - Inequality Testing
 
-## 📌 Giới thiệu
-Dự án này minh họa cách **viết unit test** trong C# để kiểm thử chương trình giải và đánh giá **bất phương trình**.  
-Mục tiêu:
-- Thực hành **Unit Test** với **NUnit** để kiểm thử các trường hợp **đúng / sai / biên / đặc biệt**.  
-- Rèn luyện kỹ năng phân tích yêu cầu và thiết kế test case toán học.  
+## 📌 Introduction
+This project demonstrates how to **write unit tests** in C# to verify and evaluate an **inequality program**.  
+Objectives:
+- Practice **Unit Testing** with **NUnit** to validate different cases (**true / false / boundary / special**).  
+- Strengthen skills in requirement analysis and designing mathematical test cases.  
 
 ---
 
-## ⚙️ Công nghệ sử dụng
+## ⚙️ Technologies Used
 - **C# .NET 6.0+**
-- **NUnit** (framework test)
-- **Visual Studio 2022** hoặc **Rider**
+- **NUnit** (testing framework)
+- **Visual Studio 2022**
